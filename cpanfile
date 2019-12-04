@@ -50,7 +50,7 @@ requires 'Encode::Locale', '==1.03';
 requires 'File::Slurp', '==9999.19';
 requires 'HTML::Template', '==2.95';
 requires 'IO::Socket::SSL', '>=1.981';
-requires 'JSON::XS', '==3.01';
+requires 'JSON::XS', '==4.02';
 requires 'List::Util', '>=1.29';
 requires 'Locale::Simple', '==0.016';
 requires 'Log::Declare', '==0.10';
