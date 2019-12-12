@@ -1,4 +1,4 @@
-artifact_name   := <service>
+artifact_name   := chs-backend-deps
 
 local           := ./local
 
