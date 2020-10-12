@@ -3,6 +3,7 @@
 # XXX unlike the rest of this file, the order in this
 # section is important.
 requires 'Devel::Declare', '==0.006019';
+test_requires 'Test::Fatal', '==0.014';
 requires 'AnyEvent', '==7.13';
 requires 'DBI', '==1.632';
 requires 'Mojolicious', '==5.47'; # Mojolicious has to be before Mango as Mango is dependent on Mojolicious
@@ -83,7 +84,6 @@ test_requires 'File::Find::Rule::Perl', '==1.13';
 test_requires 'Test::Deep', '==0.115';
 test_requires 'Test::Differences', '==0.63';
 test_requires 'Test::Exception', '==0.43';
-test_requires 'Test::Fatal', '==0.014';
 test_requires 'Test::Mock::Mango', '==0.09';
 test_requires 'Test::MockModule', '==0.05';
 test_requires 'Test::Slow', '==0.05';
