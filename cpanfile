@@ -23,7 +23,7 @@ requires 'autobox', '==2.82';
 requires 'autovivification', '==0.14';
 requires 'Text::Xslate', '==3.4.0';
 requires 'CH::Bcrypt', '==0.01';
-requires 'CH::CompanyNameEndings', '==0.37';
+requires 'CH::CompanyNameEndings', '==0.38';
 requires 'CH::Exception', '==0.30';
 requires 'CH::MangoX::Queue::Plugin::Statsd', '==0.01';
 requires 'CH::MojoX::Administration::Plugin', '==0.32';
