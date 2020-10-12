@@ -2,6 +2,7 @@
 # are resolved upfront by "pre-requiring" them.
 # XXX unlike the rest of this file, the order in this
 # section is important.
+requires 'Devel::Declare', '==0.006019';
 requires 'AnyEvent', '==7.13';
 requires 'DBI', '==1.632';
 requires 'Mojolicious', '==5.47'; # Mojolicious has to be before Mango as Mango is dependent on Mojolicious
@@ -44,7 +45,6 @@ requires 'DateTime', '==1.28';
 requires 'DateTime::Format::Strptime', '==1.56';
 requires 'DateTime::Tiny', '==1.04';
 requires 'DBD::Oracle', '==1.70';
-requires 'Devel::Declare', '==0.006019';
 requires 'Devel::StackTrace', '==2.04';
 requires 'Encode::Locale', '==1.03';
 requires 'File::Slurp', '==9999.19';
