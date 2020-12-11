@@ -2,6 +2,8 @@
 # are resolved upfront by "pre-requiring" them.
 # XXX unlike the rest of this file, the order in this
 # section is important.
+requires 'Devel::Declare', '==0.006019';
+test_requires 'Test::Fatal', '==0.014';
 requires 'AnyEvent', '==7.13';
 requires 'DBI', '==1.632';
 requires 'Mojolicious', '==5.47'; # Mojolicious has to be before Mango as Mango is dependent on Mojolicious
@@ -23,7 +25,7 @@ requires 'autobox', '==2.82';
 requires 'autovivification', '==0.14';
 requires 'Text::Xslate', '==3.4.0';
 requires 'CH::Bcrypt', '==0.01';
-requires 'CH::CompanyNameEndings', '==0.37';
+requires 'CH::CompanyNameEndings', '==0.38';
 requires 'CH::Exception', '==0.30';
 requires 'CH::MangoX::Queue::Plugin::Statsd', '==0.01';
 requires 'CH::MojoX::Administration::Plugin', '==0.32';
@@ -31,7 +33,7 @@ requires 'CH::MojoX::Error::Renderer', '==0.32';
 requires 'CH::MojoX::Plugin::Config', '==0.04';
 requires 'CH::MojoX::Plugin::Exception', '==0.02';
 requires 'CH::MojoX::Plugin::Xslate', '==0.31';
-requires 'CH::MojoX::SignIn::Plugin', '==0.48';
+requires 'CH::MojoX::SignIn::Plugin', '==0.49';
 requires 'CH::Perl', '==0.31';
 requires 'CH::Test', '==0.31';
 requires 'CH::Util', '==0.23';
@@ -44,7 +46,6 @@ requires 'DateTime', '==1.28';
 requires 'DateTime::Format::Strptime', '==1.56';
 requires 'DateTime::Tiny', '==1.04';
 requires 'DBD::Oracle', '==1.70';
-requires 'Devel::Declare', '==0.006019';
 requires 'Devel::StackTrace', '==2.04';
 requires 'Encode::Locale', '==1.03';
 requires 'File::Slurp', '==9999.19';
@@ -83,7 +84,6 @@ test_requires 'File::Find::Rule::Perl', '==1.13';
 test_requires 'Test::Deep', '==0.115';
 test_requires 'Test::Differences', '==0.63';
 test_requires 'Test::Exception', '==0.43';
-test_requires 'Test::Fatal', '==0.014';
 test_requires 'Test::Mock::Mango', '==0.09';
 test_requires 'Test::MockModule', '==0.05';
 test_requires 'Test::Slow', '==0.05';
