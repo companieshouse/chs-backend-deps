@@ -16,7 +16,7 @@ requires 'YAML', '==1.18'; # Must be resolved before Log::Log4perl::Appender::Fl
 requires 'Try::Tiny', '==0.30';
 requires 'Config::Any', '==0.27'; # Must be resolved before CH::MojoX::Plugin::Config
 
-requires 'Net::CompaniesHouse', '==0.61';
+requires 'Net::CompaniesHouse', '==0.67';
 requires 'CH::MojoX::UserPermissions', '==0.31';
 requires 'YAML', '==1.18';
 requires 'YAML::XS', '==0.63';
