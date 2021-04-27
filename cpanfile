@@ -2,10 +2,11 @@
 # are resolved upfront by "pre-requiring" them.
 # XXX unlike the rest of this file, the order in this
 # section is important.
+requires 'DBI', '==1.632';
 requires 'Devel::Declare', '==0.006019';
 test_requires 'Test::Fatal', '==0.014';
 requires 'AnyEvent', '==7.13';
-requires 'DBI', '==1.632';
+requires 'DBD::Oracle', '==1.70';
 requires 'Mojolicious', '==5.47'; # Mojolicious has to be before Mango as Mango is dependent on Mojolicious
 requires 'Mango', '==1.29'; # Must be above CH::Util; version 1.30 causes mongo auth issues
 requires 'Authen::SCRAM', '<1.0';
@@ -24,6 +25,7 @@ requires 'Attribute::Storage', '==0.09';
 requires 'autobox', '==2.82';
 requires 'autovivification', '==0.14';
 requires 'Text::Xslate', '==3.4.0';
+requires 'Crypt::CBC', '==2.33';
 requires 'CH::Bcrypt', '==0.01';
 requires 'CH::CompanyNameEndings', '==0.38';
 requires 'CH::Exception', '==0.30';
@@ -38,14 +40,12 @@ requires 'CH::Perl', '==0.31';
 requires 'CH::Test', '==0.31';
 requires 'CH::Util', '==0.23';
 requires 'Clone', '==0.39';
-requires 'Crypt::CBC', '==2.33';
 requires 'Crypt::Eksblowfish::Bcrypt', '==0.009';
 requires 'Data::Dump', '==1.22';
 requires 'Data::Dumper::Concise', '==2.023';
 requires 'DateTime', '==1.28';
 requires 'DateTime::Format::Strptime', '==1.56';
 requires 'DateTime::Tiny', '==1.04';
-requires 'DBD::Oracle', '==1.70';
 requires 'Devel::StackTrace', '==2.04';
 requires 'Encode::Locale', '==1.03';
 requires 'File::Slurp', '==9999.19';
@@ -56,6 +56,9 @@ requires 'List::Util', '>=1.29';
 requires 'Locale::Simple', '==0.016';
 requires 'Log::Declare', '==0.10';
 requires 'Log::Log4perl';
+requires 'Data::MessagePack::Stream', '==1.04';
+# transient dep of Fluent::Logger which is a transient dep of Log::Log4perl::Appender::Fluent and breaks with 1.0.5
+requires 'Fluent::Logger', '==0.28';
 requires 'Log::Log4perl::Appender::Fluent', '==0.04';
 requires 'Mail::Sender', '==0.008023';
 requires 'MangoX::EventWrapper', '==0.33';
