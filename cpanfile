@@ -35,7 +35,7 @@ requires 'CH::MojoX::Error::Renderer', '==0.32';
 requires 'CH::MojoX::Plugin::Config', '==0.04';
 requires 'CH::MojoX::Plugin::Exception', '==0.02';
 requires 'CH::MojoX::Plugin::Xslate', '==0.31';
-requires 'CH::MojoX::SignIn::Plugin', '==0.50';
+requires 'CH::MojoX::SignIn::Plugin', '==0.51';
 requires 'CH::Perl', '==0.31';
 requires 'CH::Test', '==0.31';
 requires 'CH::Util', '==0.23';
