@@ -8,13 +8,14 @@ test_requires 'Test::Fatal', '==0.014';
 requires 'AnyEvent', '==7.13';
 requires 'DBD::Oracle', '==1.70';
 requires 'Mojolicious', '==5.47'; # Mojolicious has to be before Mango as Mango is dependent on Mojolicious
-requires 'Mango', '==1.29'; # Must be above CH::Util; version 1.30 causes mongo auth issues
+requires 'IO::Socket::SSL', '>=1.981';
+requires 'Mango', '==1.30';
 requires 'Authen::SCRAM', '<1.0';
 requires 'Eval::Closure', '==0.14'; #Must be resolved before Moose
 requires 'Moose', '==2.1404';
 requires 'DateTime', '==1.28';
 requires 'YAML', '==1.18'; # Must be resolved before Log::Log4perl::Appender::Fluent
-requires 'Try::Tiny', '==0.30';
+requires 'Try::Tiny', '==0.31';
 requires 'Config::Any', '==0.27'; # Must be resolved before CH::MojoX::Plugin::Config
 
 requires 'Net::CompaniesHouse', '==0.67';
@@ -68,7 +69,7 @@ requires 'Module::Runtime', '==0.016000';
 requires 'MojoX::AWS::Authorization', '==0.01';
 requires 'MojoX::Log::Declare', '==0.32';
 requires 'Mojo::Redis', '==1.02'; # Needs to be before MojoX::Plugin::AnyCache
-requires 'MojoX::Plugin::AnyCache', '==0.04';
+requires 'MojoX::Plugin::AnyCache', '==0.33';
 requires 'MojoX::Plugin::Hook::BeforeRendered', '==0.3';
 requires 'MojoX::Plugin::Statsd', '==0.04';
 requires 'MojoX::Renderer::Xslate', '==0.092';
@@ -78,7 +79,7 @@ requires 'Monkey::Patch', '==0.03';
 requires 'Mozilla::CA';
 requires 'Protocol::Redis::XS', '==1.0003';
 requires 'Readonly', '==2.05';
-requires 'Sub::Exporter', '==0.987';
+requires 'Sub::Exporter', '==0.988';
 requires 'Time::Mock', 'v0.0.2';
 requires 'Ubic', '==1.57';
 requires 'XML::Simple', '==2.20';
